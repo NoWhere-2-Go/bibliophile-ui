@@ -1,63 +1,32 @@
-import Image from "next/image";
+import PulseSigil from "@/components/PulseSigil";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex flex-1 items-center justify-center px-6 py-12 sm:px-10">
+      <main className="relative w-full max-w-4xl overflow-hidden rounded-3xl border border-amber-100/15 bg-[#0f0c0a]/80 p-10 shadow-[0_28px_80px_rgba(0,0,0,0.6)] backdrop-blur-sm sm:p-14">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,180,108,0.16),transparent_45%),radial-gradient(circle_at_bottom,rgba(83,58,27,0.24),transparent_60%)]" />
+
+        <div className="relative flex flex-col items-center gap-8 text-center">
+          <span className="rounded-full border border-amber-200/25 bg-amber-200/5 px-4 py-1 text-xs uppercase tracking-[0.28em] text-amber-100/80">
+            Bibliophile AI
+          </span>
+
+          <PulseSigil />
+
+          <h1 className="max-w-2xl font-serif text-4xl leading-tight tracking-wide text-stone-100 sm:text-5xl">
+            The Reading Room is Being Prepared
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="max-w-2xl text-base leading-7 text-stone-300/90 sm:text-lg">
+            Our LLM-powered recommendation engine is still between the stacks,
+            learning your taste in unforgettable books. We are under
+            construction and opening soon.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+          <div className="mt-2 flex w-full max-w-xl items-center justify-center gap-3 rounded-2xl border border-amber-100/15 bg-black/25 px-5 py-4 text-sm text-stone-300/85">
+            <span className="h-2 w-2 rounded-full bg-amber-300 shadow-[0_0_10px_rgba(252,211,77,0.8)]" />
+            Quietly indexing genres, eras, moods, and hidden gems...
+          </div>
         </div>
       </main>
     </div>
