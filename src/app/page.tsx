@@ -14,7 +14,7 @@ export default function Home() {
           <PulseSigil />
 
           <h1 className="max-w-2xl font-serif text-4xl leading-tight tracking-wide text-stone-100 sm:text-5xl">
-            The Reading Room is Being Prepared
+            The Shelves are Being Arranged
           </h1>
 
           <p className="max-w-2xl text-base leading-7 text-stone-300/90 sm:text-lg">
