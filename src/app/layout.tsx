@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bibliophile AI | Under Construction",
+  title: "Lektio AI | Under Construction",
   description:
-    "Bibliophile AI is preparing a classic reading-inspired home for LLM-powered book recommendations.",
+    "Lektio AI is preparing a classic reading-inspired home for LLM-powered book recommendations.",
 };
 
 export default function RootLayout({

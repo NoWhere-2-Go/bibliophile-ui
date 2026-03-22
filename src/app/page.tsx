@@ -8,7 +8,7 @@ export default function Home() {
 
         <div className="relative flex flex-col items-center gap-8 text-center">
           <span className="rounded-full border border-amber-200/25 bg-amber-200/5 px-4 py-1 text-xs uppercase tracking-[0.28em] text-amber-100/80">
-            Bibliophile AI
+            Lektio AI
           </span>
 
           <PulseSigil />
