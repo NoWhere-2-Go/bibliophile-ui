@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import PulseSigil from "@/components/PulseSigil";
 
 export default function Home() {
@@ -26,6 +28,15 @@ export default function Home() {
           <div className="mt-2 flex w-full max-w-xl items-center justify-center gap-3 rounded-2xl border border-amber-100/15 bg-black/25 px-5 py-4 text-sm text-stone-300/85">
             <span className="h-2 w-2 rounded-full bg-amber-300 shadow-[0_0_10px_rgba(252,211,77,0.8)]" />
             Quietly indexing genres, eras, moods, and hidden gems...
+          </div>
+
+          <div className="flex flex-col items-center gap-3 sm:flex-row">
+            <Link
+              href="/login"
+              className="inline-flex items-center justify-center rounded-full border border-amber-200/30 bg-amber-100/10 px-6 py-3 text-sm font-medium tracking-[0.18em] text-amber-50 transition hover:border-amber-200/55 hover:bg-amber-100/15"
+            >
+              Preview the login page
+            </Link>
           </div>
         </div>
       </main>
